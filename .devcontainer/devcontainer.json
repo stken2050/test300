@@ -54,17 +54,15 @@
 				"FSharp.showProjectExplorerIn": "explorer"
 			},
 			"extensions": [
-				"azemoh.one-monokai",
+				"Ionide.Ionide-fsharp",
 				"ms-dotnettools.csharp",
-				"Ionide.Ionide-fsharp"
+				"azemoh.one-monokai"
 			]
 		}
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [5000, 5001],
-	"postCreateCommand": "sh $(pwd)/.devcontainer/isolated-zsh-config/install.sh  && touch $HOME/firstboot",
+	//"postCreateCommand": "",
 	//"postStartCommand": "",
-    "postAttachCommand": "[ -e $HOME/firstboot ] && rm $HOME/firstboot || (echo '=== CLEANING BASH TERMINAL ===' && (sleep 5; sudo killall -KILL bash) )"
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+        //"postAttachCommand": ""
 }
